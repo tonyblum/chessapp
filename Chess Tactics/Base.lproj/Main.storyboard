@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Chess_Tactics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-ke-ThX">
+                                <rect key="frame" x="46" y="105" width="216" height="30"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.70980392160000005" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xFz-Mw-dyT"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-ol-In3">
+                                <rect key="frame" x="52" y="465" width="216" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Next Problem">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YKC-hR-erC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="problem_0" translatesAutoresizingMaskIntoConstraints="NO" id="V1q-o3-wuW">
+                                <rect key="frame" x="21" y="161" width="281" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="rHr-bQ-9MO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myI-4z-UkH">
+                                <rect key="frame" x="52" y="28" width="216" height="61"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Check Solution"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117647058826" green="0.70980392156862748" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZGh-ke-ThX" secondAttribute="trailing" constant="42" id="4R2-VJ-WlH"/>
+                            <constraint firstItem="X6T-ol-In3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="G6G-d2-leN"/>
+                            <constraint firstItem="myI-4z-UkH" firstAttribute="leading" secondItem="X6T-ol-In3" secondAttribute="leading" id="GMe-im-N6m"/>
+                            <constraint firstItem="myI-4z-UkH" firstAttribute="trailing" secondItem="X6T-ol-In3" secondAttribute="trailing" id="LYY-37-Tpe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V1q-o3-wuW" secondAttribute="trailing" constant="2" id="PaO-st-HWf"/>
+                            <constraint firstItem="X6T-ol-In3" firstAttribute="top" secondItem="V1q-o3-wuW" secondAttribute="bottom" constant="50" id="Rbs-Bu-9gA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="X6T-ol-In3" secondAttribute="bottom" constant="72" id="bgj-q5-9v5"/>
+                            <constraint firstItem="X6T-ol-In3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="iV6-hu-Mwe"/>
+                            <constraint firstItem="ZGh-ke-ThX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="30" id="igO-XC-mr2"/>
+                            <constraint firstItem="V1q-o3-wuW" firstAttribute="top" secondItem="ZGh-ke-ThX" secondAttribute="bottom" constant="26" id="nX9-Yf-2pe"/>
+                            <constraint firstItem="myI-4z-UkH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="nk0-fH-UTK"/>
+                            <constraint firstItem="V1q-o3-wuW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="qhK-Xg-y6U"/>
+                            <constraint firstItem="V1q-o3-wuW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="161" id="u1Q-L7-kyv"/>
+                            <constraint firstItem="ZGh-ke-ThX" firstAttribute="top" secondItem="myI-4z-UkH" secondAttribute="bottom" constant="16" id="xbh-Hp-san"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="funFactLabel" destination="ZGh-ke-ThX" id="t1V-hL-Xjc"/>
+                        <outlet property="imageLabel" destination="V1q-o3-wuW" id="iRk-Ri-R29"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="89" y="347"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="problem_0" width="856" height="860"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

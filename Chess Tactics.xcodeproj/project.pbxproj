@@ -13,6 +13,7 @@
 		D57F432C1A2E8EF200A57824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57F432B1A2E8EF200A57824 /* Images.xcassets */; };
 		D57F432F1A2E8EF200A57824 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F432D1A2E8EF200A57824 /* LaunchScreen.xib */; };
 		D57F433B1A2E8EF300A57824 /* Chess_TacticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F433A1A2E8EF300A57824 /* Chess_TacticsTests.swift */; };
+		D582C9F21A33DB46003677EB /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582C9F11A33DB46003677EB /* FactBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D57F43341A2E8EF300A57824 /* Chess TacticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chess TacticsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57F43391A2E8EF300A57824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57F433A1A2E8EF300A57824 /* Chess_TacticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_TacticsTests.swift; sourceTree = "<group>"; };
+		D582C9F11A33DB46003677EB /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D57F43241A2E8EF200A57824 /* AppDelegate.swift */,
+				D582C9F11A33DB46003677EB /* FactBook.swift */,
 				D57F43261A2E8EF200A57824 /* ViewController.swift */,
 				D57F43281A2E8EF200A57824 /* Main.storyboard */,
 				D57F432B1A2E8EF200A57824 /* Images.xcassets */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D582C9F21A33DB46003677EB /* FactBook.swift in Sources */,
 				D57F43271A2E8EF200A57824 /* ViewController.swift in Sources */,
 				D57F43251A2E8EF200A57824 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				D57F43401A2E8EF300A57824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D57F43411A2E8EF300A57824 /* Build configuration list for PBXNativeTarget "Chess TacticsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				D57F43431A2E8EF300A57824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
