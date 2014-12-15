@@ -30,15 +30,18 @@ class ViewController: UIViewController {
 
     @IBAction func showFunFact() {
         let chosenProblem = problems.getRandom()
-        
+        // set text color to black
+        funFactLabel.textColor = UIColor.blackColor()
         funFactLabel.text = chosenProblem.answer
         imageLabel.image = chosenProblem.problem
-    }
+   }
     
     @IBAction func showSolution(sender: AnyObject) {
-        let chosenProblem = problems.getRandom()
-        
-        funFactLabel.text = chosenProblem.answer
+        //let chosenProblem = problems.getRandom()
+        // set text color to white
+        //unFactLabel.text = chosenProblem.answer
+        funFactLabel.textColor = UIColor.whiteColor()
     }
+    
 }
 
