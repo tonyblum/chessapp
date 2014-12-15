@@ -12,16 +12,16 @@ import UIKit
 struct Problems {
     
     let answersArray: [String] = [
-        "problem_1.png",
-        "problem_2.png",
-        "problem_3.png",
+        "1. Rxc5 if black plays Rxc5 2. Re8# ",
+        "problem_1",
+        "1. Qg8+ Rxg8 2.Nf7#",
         "problem_4.png",
-        "problem_5.png",
-        "problem_6.png",
+        "1. Qxf8 Kxf8 2. Bc5+ Kg8 3. Re8#",
+        "1. Qxe6 Nxe6 Nh6# or 1. Qh6 forcing Qf4 2. Qxf4+-",
         "problem_7.png",
-        "problem_8.png",
-        "problem_9.png",
-        "1. Qg8 Rxg8 2. Nf7#"
+        "1. b3 cxb3 2. a3 bxa3 3. c3 +-",
+        "1. Nxe5 +-",
+        "1. Bxe6 fxe6 2. Nxe6 Kg8 3. Nxd8 +-"
     ]
     
     let chessProblems: [UIImage] =
