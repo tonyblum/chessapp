@@ -10,8 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let factBook = FactBook()
-    let problemBook = ProblemBook()
+    let problems = Problems()
     
     @IBOutlet weak var funFactLabel: UITextField!
     @IBOutlet weak var imageLabel: UIImageView!
@@ -19,8 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        funFactLabel.text = factBook.randomFact()
-        //imageLabel.image = problemBook.randomProblem()
+        //funFactLabel.text = problems.getRandom().answer
+        imageLabel.image = problems.getRandom().problem
+        funFactLabel.text = problems.getRandom().answer
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +29,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFunFact() {
-        funFactLabel.text = factBook.randomFact()
-        imageLabel.image = problemBook.randomProblem()
+        let chosenProblem = problems.getRandom()
+        
+        funFactLabel.text = chosenProblem.answer
+        imageLabel.image = chosenProblem.problem
     }
     
 }
