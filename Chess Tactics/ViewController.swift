@@ -35,5 +35,10 @@ class ViewController: UIViewController {
         imageLabel.image = chosenProblem.problem
     }
     
+    @IBAction func showSolution(sender: AnyObject) {
+        let chosenProblem = problems.getRandom()
+        
+        funFactLabel.text = chosenProblem.answer
+    }
 }
 
